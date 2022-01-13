@@ -1,0 +1,20 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import { AuthProvider } from "./Contexts/Auth/AuthContext";
+import reportWebVitals from "./reportWebVitals";
+import Routes from "./Routes";
+import PrivateRoutes from "./Routes";
+import "./style.css";
+ReactDOM.render(
+  <React.StrictMode>
+    <AuthProvider>
+      <Routes />
+    </AuthProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
