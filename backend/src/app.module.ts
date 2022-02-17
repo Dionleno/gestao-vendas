@@ -6,7 +6,7 @@ import { SalesModule } from './usecases/sales/sales.module';
 
 @Module({ 
   imports: [MongooseModule.forRoot('mongodb://localhost/gestao-vendas'), SalesModule, ServeStaticModule.forRoot({
-    rootPath: join(__dirname, '..', 'client-build'), 
+    rootPath: join(__dirname, '..', 'build'), 
   })],
   controllers: [],
   providers: [],

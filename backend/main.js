@@ -13,7 +13,6 @@ async function createWindow() {
       nodeIntegration: true,
       show: false,
     },
-    fullscreen: true,
   });
   win.loadURL('http://localhost:3000/loading.html');
 
